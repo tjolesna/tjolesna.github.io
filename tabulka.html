@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabulka.css">
+    <link rel="shortcut icon" href="images/logo pingpong.png">
+    <title>Tabulka</title>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <span class="logo"><img src="images/olesna logo.png" alt=""></span>
+            <nav class="nav">
+                <ul class="nav--ul__one">
+                    <li class="nav-link"><a href="index.html">Domů</a></li>
+                    <li class="nav-link"><a href="historie.html">Historie</a></li>
+                    <li class="nav-link"><a href="tabulka.html">Tabulka</a></li>
+                    <li class="nav-link"><a href="soupiska.html">Soupiska</a></li>
+                    <li class="nav-link"><a href="treninky.html">Tréninky</a></li>
+                    <li class="nav-link"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+    
+            </nav>
+            <span class="hamburger-menu  material-symbols-outlined"><img src="images/hamburger.png" alt="" width="40px"></span>
+        </div>
+</header> 
+
+    <div class="tabulky">
+    <h1>Tabulky všech týmů</h1>
+    </div>
+    <div class="team-links-container">
+        <a href="#" class="team-link active" data-team="team-a" onclick="showTable('team-a')">Tým A</a>
+        <a href="#" class="team-link" data-team="team-b" onclick="showTable('team-b')">Tým B</a>
+        <a href="#" class="team-link" data-team="team-c" onclick="showTable('team-c')">Tým C</a>
+        <a href="#" class="team-link" data-team="team-d" onclick="showTable('team-d')">Tým D</a>
+        <a href="#" class="team-link" data-team="team-e" onclick="showTable('team-e')">Tým E</a>
+    </div>
+    
+    <div id="team-table">
+        <table id="table-team-a" class="fotbalista">
+            <thead>
+                <tr>
+                    <th>Pořadí</th>
+                    <th>Tým</th>
+                    <th>PU</th>
+                    <th>V</th>
+                    <th>R</th>
+                    <th>P</th>
+                    <th class="skore">K</th>
+                    <th class="skore">Skóre</th>
+                    <th>Body</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>TTC Příbram A</td>
+                    <td>18</td>
+                    <td>14</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td class="skore">0</td>
+                    <td class="skore">159:96</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Lokomotiva Zdice B</td>
+                    <td>18</td>
+                    <td>13</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td class="skore">0</td>
+                    <td class="skore">168:120</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Tatran Sedlčany B</td>
+                    <td>18</td>
+                    <td>11</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td class="skore">0</td>
+                    <td class="skore">155:114</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>SK Březnice B</td>
+                    <td>18</td>
+                    <td>10</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td class="skore">0</td>
+                    <td class="skore">154:130</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>SK Viktorie Ořech A</td>
+                    <td>18</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>9</td>
+                    <td class="skore">0</td>
+                    <td class="skore">136:141</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Sokol Mníšek pod Brdy B</td>
+                    <td>18</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>8</td>
+                    <td class="skore">0</td>
+                    <td class="skore">137:147</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>Viktoria Vestec A</td>
+                    <td>18</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>8</td>
+                    <td class="skore">0</td>
+                    <td class="skore">132:144</td>
+                    <td>24</td>
+                </tr>
+                <tr class="olesna">
+                    <td>8.</td>
+                    <td>TJ Olešná A</td>
+                    <td>18</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td class="skore">0</td>
+                    <td class="skore">126:145</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>Slovan Lochovice B</td>
+                    <td>18</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td class="skore">0</td>
+                    <td class="skore">136:152</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>Sokol Příbram</td>
+                    <td>18</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td class="skore">0</td>
+                    <td class="skore">128:147</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td>SLAVOJ Obecnice C</td>
+                    <td>18</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>13</td>
+                    <td class="skore">0</td>
+                    <td class="skore">112:158</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>12.</td>
+                    <td>Sokol Hořovice C</td>
+                    <td>18</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>11</td>
+                    <td class="skore">0</td>
+                    <td class="skore">121:170</td>
+                    <td>13</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <table id="table-team-b" class="fotbalista">
+            <thead>
+                <tr>
+                    <th>Pořadí</th>
+                    <th>Tým</th>
+                    <th>PU</th>
+                    <th>V</th>
+                    <th>R</th>
+                    <th>P</th>
+                    <th class="skore">K</th>
+                    <th class="skore">Skóre</th>
+                    <th>Body</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>T.J. Sokol Žebrák A</td>
+                    <td>17</td>
+                    <td>16</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td class="skore">0</td>
+                    <td class="skore">220:86</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>TJ Praskolesy A</td>
+                    <td>16</td>
+                    <td>13</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td class="skore">0</td>
+                    <td class="skore">178:110</td>
+                    <td>40</td>
+                </tr>
+                <tr class="olesna">
+                    <td>3.</td>
+                    <td>TJ Olešná B</td>
+                    <td>16</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td class="skore">0</td>
+                    <td class="skore">146:142</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>TJ Slovan Lochovice C</td>
+                    <td>16</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>7</td>
+                    <td class="skore">0</td>
+                    <td class="skore">161:127</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>TJ Broumy</td>
+                    <td>16</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>7</td>
+                    <td class="skore">0</td>
+                    <td class="skore">152:136</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Sokol Karlštejn A</td>
+                    <td>16</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>8</td>
+                    <td class="skore">0</td>
+                    <td class="skore">130:158</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>TJ Chaloupky A</td>
+                    <td>16</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td class="skore">0</td>
+                    <td class="skore">116:172</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>TJ Olešná C</td>
+                    <td>16</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>10</td>
+                    <td class="skore">0</td>
+                    <td class="skore">127:161</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>TJ Srbsko A</td>
+                    <td>16</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>11</td>
+                    <td class="skore">0</td>
+                    <td class="skore">120:168</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>T.J. Sokol Žebrák B</td>
+                    <td>17</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>14</td>
+                    <td class="skore">0</td>
+                    <td class="skore">108:198</td>
+                    <td>5</td>
+                </tr>
+            </tbody>  
+        </table>
+
+    <table id="table-team-c" class="fotbalista">
+        <thead>
+            <tr>
+                <th>Pořadí</th>
+                <th>Tým</th>
+                <th>PU</th>
+                <th>V</th>
+                <th>R</th>
+                <th>P</th>
+                <th class="skore">K</th>
+                <th class="skore">Skóre</th>
+                <th>Body</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>T.J. Sokol Žebrák A</td>
+                <td>17</td>
+                <td>16</td>
+                <td>0</td>
+                <td>1</td>
+                <td class="skore">0</td>
+                <td class="skore">220:86</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>TJ Praskolesy A</td>
+                <td>16</td>
+                <td>13</td>
+                <td>1</td>
+                <td>2</td>
+                <td class="skore">0</td>
+                <td class="skore">178:110</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>TJ Olešná B</td>
+                <td>16</td>
+                <td>7</td>
+                <td>3</td>
+                <td>6</td>
+                <td class="skore">0</td>
+                <td class="skore">146:142</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>TJ Slovan Lochovice C</td>
+                <td>16</td>
+                <td>7</td>
+                <td>2</td>
+                <td>7</td>
+                <td class="skore">0</td>
+                <td class="skore">161:127</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>TJ Broumy</td>
+                <td>16</td>
+                <td>7</td>
+                <td>2</td>
+                <td>7</td>
+                <td class="skore">0</td>
+                <td class="skore">152:136</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Sokol Karlštejn A</td>
+                <td>16</td>
+                <td>7</td>
+                <td>1</td>
+                <td>8</td>
+                <td class="skore">0</td>
+                <td class="skore">130:158</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>TJ Chaloupky A</td>
+                <td>16</td>
+                <td>5</td>
+                <td>4</td>
+                <td>7</td>
+                <td class="skore">0</td>
+                <td class="skore">116:172</td>
+                <td>19</td>
+            </tr>
+            <tr class="olesna">
+                <td>8.</td>
+                <td>TJ Olešná C</td>
+                <td>16</td>
+                <td>5</td>
+                <td>1</td>
+                <td>10</td>
+                <td class="skore">0</td>
+                <td class="skore">127:161</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>TJ Srbsko A</td>
+                <td>16</td>
+                <td>5</td>
+                <td>0</td>
+                <td>11</td>
+                <td class="skore">0</td>
+                <td class="skore">120:168</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>T.J. Sokol Žebrák B</td>
+                <td>17</td>
+                <td>1</td>
+                <td>2</td>
+                <td>14</td>
+                <td class="skore">0</td>
+                <td class="skore">108:198</td>
+                <td>5</td>
+            </tr>
+        </tbody>  
+    </table>
+
+<table id="table-team-d" class="fotbalista">
+    <thead>
+        <tr>
+            <th>Pořadí</th>
+            <th>Tým</th>
+            <th>PU</th>
+            <th>V</th>
+            <th>R</th>
+            <th>P</th>
+            <th class="skore">K</th>
+            <th class="skore">Skóre</th>
+            <th>Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>
+            <td>Lokomotiva Zdice C</td>
+            <td>17</td>
+            <td>16</td>
+            <td>0</td>
+            <td>1</td>
+            <td class="skore">0</td>
+            <td class="skore">228:78</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>T.J. Sokol Žebrák C</td>
+            <td>17</td>
+            <td>12</td>
+            <td>1</td>
+            <td>4</td>
+            <td class="skore">0</td>
+            <td class="skore">193:113</td>
+            <td>37</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Lokomotiva Zdice D</td>
+            <td>18</td>
+            <td>10</td>
+            <td>3</td>
+            <td>5</td>
+            <td class="skore">0</td>
+            <td class="skore">199:125</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Sokol Karlštejn B</td>
+            <td>16</td>
+            <td>9</td>
+            <td>2</td>
+            <td>5</td>
+            <td class="skore">0</td>
+            <td class="skore">171:117</td>
+            <td>29</td>
+        </tr>
+        <tr class="olesna">
+            <td>5.</td>
+            <td>TJ Olešná D</td>
+            <td>17</td>
+            <td>9</td>
+            <td>1</td>
+            <td>7</td>
+            <td class="skore">0</td>
+            <td class="skore">154:152</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>TJ Praskolesy B</td>
+            <td>17</td>
+            <td>8</td>
+            <td>1</td>
+            <td>8</td>
+            <td class="skore">0</td>
+            <td class="skore">140:166</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>TJ Slovan Lochovice D</td>
+            <td>17</td>
+            <td>6</td>
+            <td>3</td>
+            <td>8</td>
+            <td class="skore">0</td>
+            <td class="skore">148:158</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>T.J. Sokol Žebrák D</td>
+            <td>16</td>
+            <td>5</td>
+            <td>4</td>
+            <td>7</td>
+            <td class="skore">0</td>
+            <td class="skore">140:148</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>T.J. Sokol Hudlice C</td>
+            <td>16</td>
+            <td>4</td>
+            <td>1</td>
+            <td>11</td>
+            <td class="skore">0</td>
+            <td class="skore">93:195</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>10.</td>
+            <td>T.J. Sokol Hořovice D</td>
+            <td>16</td>
+            <td>2</td>
+            <td>1</td>
+            <td>13</td>
+            <td class="skore">0</td>
+            <td class="skore">87:201</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>11.</td>
+            <td>TJ Srbsko B</td>
+            <td>17</td>
+            <td>1</td>
+            <td>3</td>
+            <td>13</td>
+            <td class="skore">0</td>
+            <td class="skore">103:203</td>
+            <td>6</td>
+        </tr>
+    </tbody>  
+</table>
+
+<table id="table-team-e" class="fotbalista">
+    <thead>
+        <tr>
+            <th>Pořadí</th>
+            <th>Tým</th>
+            <th>PU</th>
+            <th>V</th>
+            <th>R</th>
+            <th>P</th>
+            <th class="skore">K</th>
+            <th class="skore">Skóre</th>
+            <th>Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>
+            <td>TJ Litavan Libomyšl</td>
+            <td>14</td>
+            <td>10</td>
+            <td>2</td>
+            <td>2</td>
+            <td class="skore">0</td>
+            <td class="skore">144:108</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Lokomotiva Zdice E</td>
+            <td>14</td>
+            <td>10</td>
+            <td>1</td>
+            <td>3</td>
+            <td class="skore">0</td>
+            <td class="skore">161:91</td>
+            <td>31</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>T.J. Hořovice E</td>
+            <td>14</td>
+            <td>8</td>
+            <td>0</td>
+            <td>6</td>
+            <td class="skore">0</td>
+            <td class="skore">127:125</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>TJ Slovan Lochovice E</td>
+            <td>14</td>
+            <td>7</td>
+            <td>1</td>
+            <td>6</td>
+            <td class="skore">0</td>
+            <td class="skore">129:123</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>T.J. Sokol Žebrák E</td>
+            <td>14</td>
+            <td>6</td>
+            <td>2</td>
+            <td>6</td>
+            <td class="skore">0</td>
+            <td class="skore">132:120</td>
+            <td>20</td>
+        </tr>
+        <tr class="olesna">
+            <td>6.</td>
+            <td>TJ Olešná E</td>
+            <td>14</td>
+            <td>6</td>
+            <td>1</td>
+            <td>7</td>
+            <td class="skore">0</td>
+            <td class="skore">140:112</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>TJ Chaloupky B.</td>
+            <td>14</td>
+            <td>4</td>
+            <td>1</td>
+            <td>9</td>
+            <td class="skore">0</td>
+            <td class="skore">115:137</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>Lokomotiva Zdice F</td>
+            <td>14</td>
+            <td>1</td>
+            <td>0</td>
+            <td>13</td>
+            <td class="skore">0</td>
+            <td class="skore">60:192</td>
+            <td>3</td>
+        </tr>
+    </tbody>  
+</table>
+</div>
+
+<div class="footer">
+    <h1>© Lukáš Sviták</h1>
+    </div>
+</body>
+<script src="stolni tenis.js"></script>
+</html>

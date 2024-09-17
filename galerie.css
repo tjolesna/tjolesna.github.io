@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.949);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    
+    ul {
+        list-style: none;
+        padding-bottom: 15px;
+        margin: 0 auto;
+        
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.5s;
+    }
+    
+    nav ul li a:hover {
+        color: red;
+        }
+    
+        nav ul li a.active {
+            color: red;
+        }
+        
+        
+    
+    header {
+        background: black;
+        color: white;
+        height: 90px;
+    
+        padding: .5rem 0;
+    }
+    
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    
+    .nav-container .logo {
+        font-size: 2rem; 
+        font-weight: bold;  
+    }
+    
+    .nav {
+        display: flex;
+        flex-grow: 1;
+    }
+    
+    .nav--ul__one {
+        margin: 0 auto;
+    }
+    
+    .nav-container, .nav--ul__one,
+    .nav--ul__two {
+        display: flex;
+        gap: 70px;
+        font-size: 1.2rem;
+    }
+    
+    .hamburger-menu {
+        display: none; 
+        cursor: pointer;
+    }
+    
+    .logo img {
+        width: 100px;
+        position: relative;
+        bottom: 5px;
+        }
+    
+       .footer h1 {
+        color: white;
+        text-align: center;
+        background-color: black;
+        position: relative;
+        top: 150px;
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        height: 60px;
+        padding-top: 42px;
+        font-weight: normal;
+        }
+    
+        .nav-container .logo img {
+            width: 75px;
+            margin-top: 13px;
+            }
+
+            .soustredeni img {
+                width: 400px;
+                height: auto;
+                border-radius: 15px;
+                border: 3px solid white;
+                transition: transform 0.5s ease; /* Plynulý přechod pro zvětšení */
+                margin-top: 30px;
+                
+            }
+
+            .soustredeni {
+            text-align: center;
+            padding: 10px;
+            }
+
+            .soustredeni-nadpis h1{
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+            }
+
+            .soustredeni img:hover {
+            opacity: 0.7; /* Mírně ztmaví obrázek */
+            }
+
+        
+            @media (max-width: 1100px) {
+                .nav-container .logo {
+                    font-size: 1.2rem;
+                    z-index: 2;
+                }
+            
+                .nav {
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+            
+                .nav--ul__one,
+                .nav--ul__two {
+                    flex-direction: column;
+                    gap: 40px;
+                }
+            
+                .hamburger-menu {
+                    display: block;
+                    z-index: 2;
+                    position: absolute;
+                    top: 30px; 
+                    right: 15px;   
+            
+                }
+            
+            
+            
+                .nav {
+                    position: absolute;
+                    top: 0;
+                    right: -100%;
+                    bottom: 0;
+                    width: 100%;
+                    z-index: 1;
+                    padding-top: 6rem;
+                    align-items: center;
+                    text-align: center;
+                    background-color: black;
+                    color: white;
+                    transition: 0.15s ease-in-out;
+                }
+            
+                .nav.active {
+                    right: 0;
+                }
+            
+                .menu-open {
+                    overflow: hidden;
+                }
+            
+            }

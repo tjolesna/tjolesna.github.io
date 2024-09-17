@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soupiska</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo pingpong.png">
+    <style>
+        .btn-team {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            color: #fff;
+            text-decoration: none;
+        }
+        .btn-team:hover {
+            background-color: #c82333;
+            border-color: #c82333;
+            color: whitesmoke;
+        }
+        .btn-team:focus {
+            outline: none;
+            box-shadow: none ;
+        }
+
+        body {
+        background-color: rgba(0, 0, 0, 0.949);
+        }
+        .team-section {
+            background-color: #fff; 
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        .container h1 {
+        text-align: center;
+        color: white;
+        padding-top: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        }
+
+        ul {
+    list-style: none;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+}
+
+nav ul li a:hover {
+    color: red;
+    text-decoration: none;
+    }
+
+    nav ul li a.active {
+        color: red;
+    }
+    
+    
+
+header {
+    background: black;
+    color: white;
+    height: 100px;
+    font-family: normal;
+    padding: .5rem 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.nav-container .logo {
+    font-size: 2rem; 
+    font-weight: bold;  
+}
+
+.nav-container .logo img {
+width: 75px;
+margin-top: 13px;
+}
+
+.nav {
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav--ul__one {
+    margin: 0 auto;
+}
+
+.nav-container, .nav--ul__one,
+.nav--ul__two {
+    display: flex;
+    gap: 70px;
+    font-size: 1.2rem;
+}
+
+.hamburger-menu {
+    display: none; 
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100px;
+    position: relative;
+    bottom: 5px;
+    }
+
+   #accordion {
+    padding-top: 30px;
+   }
+
+    @media (max-width: 1100px) {
+    .nav-container .logo {
+        font-size: 1.2rem;
+        z-index: 2;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 2rem;
+        overflow: hidden;
+    }
+
+    .nav--ul__one,
+    .nav--ul__two {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        z-index: 2;
+        position: absolute;
+        top: 30px; 
+        right: 15px; 
+
+    }
+
+
+    .nav {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+        padding-top: 6rem;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+        color: white;
+        transition: 0.15s ease-in-out;
+        position: fixed;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+}
+
+    .footer h1 {
+    color: white;
+    text-align: center;
+    background-color: black;
+    position: relative;
+    top: 150px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    height: 100px;
+    padding-top: 42px;
+    }
+
+    @media (max-width: 600px) {
+    .container h1 {
+    font-size: 25px;
+    }
+    }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <span class="logo"><img src="images/olesna logo.png" alt=""></span>
+            <nav class="nav">
+                <ul class="nav--ul__one">
+                    <li class="nav-link"><a href="index.html">Domů</a></li>
+                    <li class="nav-link"><a href="historie.html">Historie</a></li>
+                    <li class="nav-link"><a href="tabulka.html">Tabulka</a></li>
+                    <li class="nav-link"><a href="soupiska.html">Soupiska</a></li>
+                    <li class="nav-link"><a href="treninky.html">Tréninky</a></li>
+                    <li class="nav-link"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+    
+            </nav>
+            <span class="hamburger-menu  material-symbols-outlined"><img src="images/hamburger.png" alt="" width="40px"></span>
+        </div>
+</header> 
+    <div class="container">
+        <h1>Soupisky týmů</h1>
+        <div id="accordion">
+         
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-team" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Tým A
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <h4>Seznam hráčů týmu A</h4>
+                        <ol>
+                            <li>Zdeněk Kuksa  |  STR: 1632  |  Bilance: 31:19</li>
+                            <li>Miloš Herman ml.  |  STR: 1584  |  Bilance: 35:23</li>
+                            <li>Lukáš Sviták  |  STR: 1569  |  Bilance: 27:27</li>
+                            <li>Miloš Herman  |  STR: 1458  |  Bilance: 14:37</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-team" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Tým B
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <h4>Seznam hráčů týmu B</h4>
+                        <ol>
+                            <li>Jan Kopp  |  STR: 1469  |  Bilance: 31:10</li>
+                            <li>Radek Vurm  |  STR: 1429  |  Bilance: 38:20</li>
+                            <li>Stanislav Kopp |  STR: 1398  |  Bilance: 30:28</li>
+                            <li>Václav Solar |  STR: 1380  |  Bilance: 17:22</li>
+                        </ol>   
+                    </div>
+                </div>
+            </div>
+            
+<div class="card">
+    <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+            <button class="btn btn-team" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Tým C
+            </button>
+        </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+            <h4>Seznam hráčů týmu C</h4>
+            <ol>
+                <li>Filip Hucek  |  STR: 1472  |  Bilance: 15:7</li>
+                <li>Jan Švamberk  |  STR: 1442  |  Bilance: 32:26</li>
+                <li>František Kroc |  STR: 1393  |  Bilance: 26:34</li>
+                <li>Tomáš Šmíd |  STR: 1235  |  Bilance: 4:35</li>
+            </ol>   
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-header" id="headingFour">
+        <h5 class="mb-0">
+            <button class="btn btn-team" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Tým D
+            </button>
+        </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+        <div class="card-body">
+            <h4>Seznam hráčů týmu D</h4>
+            <ol>
+                <li>Petr Novák  |  STR: 1290 |  Bilance: 21:11</li>
+                <li>František Kalerta |  STR: 1279  |  Bilance: 38:15</li>
+                <li>Aleš Novák |  STR: 1240  |  Bilance: 23:14</li>
+                <li>Michal Švamberk |  STR: 1197  |  Bilance: 17:23</li>
+                <li>Jiří Velvarský |  STR: 1092  |  Bilance: 19:34</li>
+            </ol>   
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header" id="headingFive">
+        <h5 class="mb-0">
+            <button class="btn btn-team" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Tým E
+            </button>
+        </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+        <div class="card-body">
+            <h4>Seznam hráčů týmu E</h4>
+            <ol>
+                <li>Tomáš Karel |  STR: 1042 |  Bilance: 33:9</li>
+                <li>Marek Herman |  STR: 1037  |  Bilance: 34:7</li>
+                <li>Matěj Tauš |  STR: 1009  |  Bilance: 20:8</li>
+                <li>Miroslav Triner |  STR: 735  |  Bilance: 13:33</li>
+                <li>Jakub Sviták |  STR: 360  |  Bilance: 1:12</li>
+                <li>Jakub Plecitý |  STR: 57  |  Bilance: 3:26</li>
+                <li>Martin Svoboda |  STR: 1  |  Bilance: 0:5</li>
+            </ol>     
+        </div>
+    </div>
+</div>
+
+            
+    </div>
+</div>
+
+<div class="footer">
+<h1>© Lukáš Sviták</h1>
+</div>
+
+    <script src="stolni tenis.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
